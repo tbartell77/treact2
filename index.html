@@ -32,26 +32,34 @@
             <a class="nav__link nav__link--primary" href="">Sign Up</a>
           </div>
           <button class="btn__menu" onclick="openMenu()">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="btn__menu--svg"
-            >
-              <line x1="3" y1="12" x2="21" y2="12"></line>
-              <line x1="3" y1="6" x2="21" y2="6"></line>
-              <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg>
+            <i class="fa-solid fa-bars"></i>
           </button>
+          <div class="menu__backdrop">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+              <i class="fa-solid fa-times"></i>
+            </button>
+            <ul class="menu__links">
+              <li class="menu__list">
+                <a href="" class="menu__link">About</a>
+              </li>
+              <li class="menu__list">
+                <a href="" class="menu__link">Blog</a>
+              </li>
+              <li class="menu__list">
+                <a href="" class="menu__link">Pricing</a>
+              </li>
+              <li class="menu__list">
+                <a href="" class="menu__link">Contact Us</a>
+              </li>
+              <li class="menu__list">
+                <a href="" class="menu__link">Login</a>
+              <li class="menu__list">
+                <a href="" class="menu__link menu__link--primary">Sign Up</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </nav>
-
       <header>
         <div class="container">
           <div class="row">
@@ -229,10 +237,19 @@
             </div>
           </div>
         </div>
-        <svg width="600" height="600" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg" class="features__blob">
-            <g transform="translate(300,300)">
-                <path d="M125,-160.4C159.9,-146.7,184.6,-107.3,178.8,-70.9C173.1,-34.4,137,-0.8,128.8,47.3C120.7,95.5,140.6,158.2,123.8,198.4C107,238.6,53.5,256.3,5.4,248.9C-42.7,241.5,-85.4,208.9,-112.7,172.1C-140,135.3,-151.8,94.2,-146.3,59.7C-140.8,25.1,-117.9,-2.9,-104,-30.1C-90.1,-57.3,-85,-83.7,-69.1,-103.5C-53.3,-123.4,-26.6,-136.7,9.2,-149.4C45.1,-162,90.1,-174,125,-160.4Z" fill="#FFB4BC"></path>
-            </g>
+        <svg
+          width="600"
+          height="600"
+          viewBox="0 0 600 600"
+          xmlns="http://www.w3.org/2000/svg"
+          class="features__blob"
+        >
+          <g transform="translate(300,300)">
+            <path
+              d="M125,-160.4C159.9,-146.7,184.6,-107.3,178.8,-70.9C173.1,-34.4,137,-0.8,128.8,47.3C120.7,95.5,140.6,158.2,123.8,198.4C107,238.6,53.5,256.3,5.4,248.9C-42.7,241.5,-85.4,208.9,-112.7,172.1C-140,135.3,-151.8,94.2,-146.3,59.7C-140.8,25.1,-117.9,-2.9,-104,-30.1C-90.1,-57.3,-85,-83.7,-69.1,-103.5C-53.3,-123.4,-26.6,-136.7,9.2,-149.4C45.1,-162,90.1,-174,125,-160.4Z"
+              fill="#FFB4BC"
+            ></path>
+          </g>
         </svg>
       </section>
       <section id="quality">
